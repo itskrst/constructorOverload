@@ -1,0 +1,26 @@
+package constructorsOverload;
+
+public class main {
+
+	public static void main(String[] args) {
+
+		Employee x = new  Employee	("Kirsten", 
+									"Escueta", 
+									"Program", 
+									"hatdog",
+									"Female",
+									19);
+		
+		Employee x1 = new Employee	("Kirsten",
+									"Escueta",
+									"Program");
+		
+		Employee x2 = new Employee();
+		
+		
+		// System.out.print(x.getFirstName());
+		
+		
+	}
+
+}
