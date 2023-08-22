@@ -1,0 +1,54 @@
+package constructorsOverload;
+
+public class Employee {
+
+	private String firstName, lastName;
+	private String title, address, sex;
+	
+	private int age;
+	
+	Employee(){
+		firstName = "n/a";
+		lastName = "n/a";
+		title = "n/a";
+		address = "n/a";
+		sex = "n/a";
+		age = 0;
+	}
+	
+	
+	Employee(String firstName, String lastName, String title){
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.title = title;
+		address = "n/a";
+		sex = "n/a";
+		age = 0;
+		
+	}
+	
+	
+	Employee(String first_name, 
+			String last_name, 
+			String title, 
+			String address, 
+			String sex,
+			int age){
+		
+		
+		this.firstName = first_name;
+		this.lastName = last_name;
+		this.title = title;
+		this.address = address;
+		this.sex = sex;
+		this.age =  age;
+	}
+	
+	void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	
+	String getFirstName() {
+		return firstName;
+	}
+}
